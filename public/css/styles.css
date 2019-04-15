@@ -2,6 +2,10 @@
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
+.content {
+  margin-top: 10px;
+}
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -13,6 +17,14 @@
 }
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
+}
+
+.form-input{
+  padding: 5px 0;
+}
+
+.form-text-area{
+  padding-bottom: 5px
 }
 
 .footer-padding {
