@@ -2,16 +2,14 @@
 
 <div class="content">
   <h1>Home</h1>
+  <p><%= homeStartingContent %></p>
 
   <div class="">
-    <% for (var i=0,len = homeStartingContent.length; i < len; i++) { %>
-      <p><%= homeStartingContent[i].substr(0,99) %> <a href='/post'>...Read More</a> </p>
+    <% for(var i=0; i < posts.length; i++){ %>
+      <h1><%= posts[i].postTitle %></h1>
+      <p><%= posts[i].postContent %></p>
     <% } %>
-
   </div>
-
-
-
 </div>
 
 <%- include("partials/footer") -%>
