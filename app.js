@@ -53,6 +53,18 @@ app.get("/post", function (req, res) {
   res.render("post");
 });
 
+app.get("/posts/:post", function(req, res){
+  let requestedTitle = req.params.post;
+  posts.forEach(function(indvPost){
+    if (requestedTitle === indvPost.postTitle){
+      console.log("Match Found");
+    } else{
+      console.log("Match Not Found");
+    }
+  });
+  res.redirect("/post");
+})
+
 app.listen(3000, function() {
   console.log("Server started on port 3000");
 });
